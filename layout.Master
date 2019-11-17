@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layout.master.cs" Inherits="Assignment2ab.layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Humber College</title>
+    <link rel="stylesheet" type="text/css" href="/content/style_layout.css" />  
+</head>
+<body>
+    <header>
+        <div  class="div_width">
+            <h1> HUMBER COLLEGE</h1>
+            <nav id="main_nav">
+                <ul id="main_menu">
+                     <li><a href="#">HOME</a></li>
+                     <li><a href="#">ABOUT US</a></li>
+                     <li><a href="#">VISIT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="div_width">
+         <form id="form1" runat="server">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         </form>
+        </div>
+    <footer>
+        <div  class="div_width">
+            
+            <nav id="footer_nav">
+                <ul id="footer_menu">
+                     <li><a href="#">HOME</a></li>
+                     <li><a href="#">ABOUT US</a></li>
+                     <li><a href="#">VISIT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
