@@ -11,7 +11,20 @@ namespace Assignment2ab
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string sid = Request.QueryString["studentid"];
 
+            string query = "select * from STUDENTS where studentid =" + sid + ";";
+
+            var db = new DATABASE();
+            List<Dictionary<String, String>> rs = db.showdata(query);
+
+            foreach (Dictionary<String, String> row in rs)
+            {
+                student_fname.InnerHtml = row["STUDENTFNAME"];
+                student_lname.InnerHtml = row["STUDENTLNAME"];
+                student_number.InnerHtml = row["STUDENTNUMBER"];
+                enrolment_date.InnerHtml = row["ENROLMENTDATE"];
+            }
         }
     }
 }

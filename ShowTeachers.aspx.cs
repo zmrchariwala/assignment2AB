@@ -11,7 +11,21 @@ namespace Assignment2ab
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string tid = Request.QueryString["teacherid"];
 
+            string query = "select * from TEACHERS where teacherid =" + tid + ";";
+
+            var db = new DATABASE();
+            List<Dictionary<String, String>> rs = db.showdata(query);
+
+            foreach (Dictionary<String, String> row in rs)
+            {
+                teacher_fname.InnerHtml = row["TEACHERFNAME"];
+                teacher_lname.InnerHtml = row["TEACHERLNAME"];
+                hire_date.InnerHtml = row["HIREDATE"];
+                employee_number.InnerHtml = row["EMPLOYEENUMBER"];
+                salary_amount.InnerHtml = row["SALARY"];
+            }
         }
     }
 }

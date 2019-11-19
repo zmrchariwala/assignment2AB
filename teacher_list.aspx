@@ -6,19 +6,22 @@
         <asp:label for="teacher_search" runat="server"> Teacher Search:</asp:label>
         <asp:TextBox ID="teacher_search" runat="server"></asp:TextBox>
           <asp:Button Class="button2" runat="server" text="SEARCH"/>
-           <asp:Button Class="button2" runat="server" text="EDIT"/>
+          <!-- <asp:Button Class="button2" runat="server" text="EDIT"/>
            <asp:Button Class="button2" runat="server" text="DELETE"/>
-          <asp:Button Class="button2" runat="server" text="ADD"/>
+          <asp:Button Class="button2" runat="server" text="ADD"/>-->
         
     </div>
     <div class="table" runat="server">
         <div class="listitem">
-            <div class="cul1">TEACHER NAME</div>
-            <div class="cul1">HIRE DATE</div>
-            <div class="cul1">EMP NUMBER</div>
+            <div class="cul1">TEACHER FIRST NAME</div>
+            <div class="cul2">TEACHER LAST NAME</div>
+            <div class="cul2">EMP NUMBER</div>
+            <div class="cul2">HIRE DATE</div>
             <div class="cul2">SALARY</div>
             
         </div>
-      
+        <div id="teacher_result" runat="server">
+
+        </div>
     </div>
 </asp:Content>

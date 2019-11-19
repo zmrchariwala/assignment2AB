@@ -13,8 +13,8 @@
         <span id="employee_number" runat="server"></span><br />
         <span> SALARY:</span>
         <span id="salary_amount" runat="server"></span><br />   
-    <div>
+    <!--<div>
         <asp:Button class="button1" runat="server" Text="UPDATE" />
-    </div>
+    </div>-->
     </div>
 </asp:Content>

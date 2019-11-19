@@ -19,6 +19,8 @@
             <div class="cul2">CLASS NAME</div>
             
         </div>
-      
+        <div id="classes_result" runat="server">
+
+        </div>
     </div>
 </asp:Content>

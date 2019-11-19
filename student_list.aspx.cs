@@ -14,12 +14,20 @@ namespace Assignment2ab
             students_result.InnerHtml = "";
 
             string searchkey = "";
+            string query;
             if(IsPostBack)
             {
-               //searchkey = student_search.Text();
+               searchkey = student_search.Text;
             }
-
-            string query = "select * from STUDENTS;";
+            if (searchkey == "" || searchkey == null)
+            {
+                query = "select * from STUDENTS;";
+            }
+            else
+            {
+                query = "select * from STUDENTS where STUDENTFNAME LIKE '%"+ searchkey +"%' OR STUDENTLNAME LIKE '%"+ searchkey + "%' OR STUDENTNUMBER LIKE '%"+ searchkey + "%' OR ENROLMENTDATE LIKE '%"+ searchkey + "%';";
+                
+            }
 
             var db = new DATABASE();
             List<Dictionary<String, String>> rs = db.showdata(query);
