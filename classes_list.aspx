@@ -7,8 +7,8 @@
         <asp:TextBox ID="classes_search" runat="server"></asp:TextBox>
            <asp:Button Class="button2" runat="server" text="SEARCH"/>
            <!--<asp:Button Class="button2" runat="server" text="EDIT"/>
-           <asp:Button Class="button2" runat="server" text="DELETE"/>
-           <asp:Button Class="button2" runat="server" text="ADD"/>-->
+           <asp:Button Class="button2" runat="server" text="DELETE"/>-->
+           <asp:Button Class="button2" PostBackUrl="~/AddClasses.aspx" runat="server" text="ADD"/>
         
     </div>
     <div class="table" runat="server">

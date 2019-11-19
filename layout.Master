@@ -13,9 +13,10 @@
             <h1> HUMBER COLLEGE</h1>
             <nav id="main_nav">
                 <ul id="main_menu">
-                     <li><a href="#">HOME</a></li>
-                     <li><a href="#">ABOUT US</a></li>
-                     <li><a href="#">VISIT US</a></li>
+                     <li><a href="home_page.aspx">HOME</a></li>
+                     <li><a href="teacher_list.aspx">TEACHER</a></li>
+                     <li><a href="student_list.aspx">STUDENT</a></li>
+                     <li><a href="classes_list.aspx">CLASS</a></li>
                 </ul>
             </nav>
         </div>
