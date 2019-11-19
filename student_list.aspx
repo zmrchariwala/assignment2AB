@@ -17,6 +17,7 @@
             <div class="cul2">LAST NAME</div>
             <div class="cul2">STUDENT NUMBER</div>
             <div class="cul2">ENROLMENT DATE</div>
+            <div class="cul2">Action</div>
 
         </div>
         <div id="students_result" runat="server">

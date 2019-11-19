@@ -47,6 +47,7 @@ namespace Assignment2ab
 
                 string classname = row["CLASSNAME"];
                 classes_result.InnerHtml += "<div class=\"cul2\">" + classname + "</div>";
+                classes_result.InnerHtml += "<div class=\"cul2\"><a href=\"UpdateClasses.aspx?classid="+ classid + "\">Update</a>/<a href=\"DeleteClasses.aspx?classid=" + classid + "\">Delete</a></div>";
 
                 classes_result.InnerHtml += "</div>";
             }

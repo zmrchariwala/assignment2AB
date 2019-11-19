@@ -50,6 +50,8 @@ namespace Assignment2ab
                 string enrolmentdate = row["ENROLMENTDATE"];
                 students_result.InnerHtml += "<div class=\"cul2\">" + enrolmentdate + "</div>";
 
+                students_result.InnerHtml += "<div class=\"cul2\"><a href=\"UpdateStudent.aspx?studentid=" + studentid + "\">Update</a>/<a href=\"DeleteStudent.aspx?studentid=" + studentid + "\">Delete</a></div>";
+
                 students_result.InnerHtml += "</div>";
             }
         }

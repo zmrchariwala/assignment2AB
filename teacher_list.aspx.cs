@@ -52,6 +52,7 @@ namespace Assignment2ab
                 string salary = row["SALARY"];
                 teacher_result.InnerHtml += "<div class=\"cul2\">" + salary + "</div>";
 
+                teacher_result.InnerHtml += "<div class=\"cul2\"><a href=\"UpdateTeacher.aspx?teacherid=" + teacherid + "\">Update</a>/<a href=\"DeleteTeacher.aspx?teacherid=" + teacherid + "\">Delete</a></div>";
                 teacher_result.InnerHtml += "</div>";
             }
         }

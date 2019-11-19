@@ -18,6 +18,8 @@
             <div class="cul2">EMP NUMBER</div>
             <div class="cul2">HIRE DATE</div>
             <div class="cul2">SALARY</div>
+            <div class="cul2">Action</div>
+
             
         </div>
         <div id="teacher_result" runat="server">
