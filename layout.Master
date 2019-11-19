@@ -10,13 +10,13 @@
 <body>
     <header>
         <div  class="div_width">
-            <h1> HUMBER COLLEGE</h1>
+            <a href="home_page.aspx"><h1> HUMBER COLLEGE</h1></a>
             <nav id="main_nav">
                 <ul id="main_menu">
-                     <li><a href="home_page.aspx">HOME</a></li>
-                     <li><a href="teacher_list.aspx">TEACHER</a></li>
-                     <li><a href="student_list.aspx">STUDENT</a></li>
-                     <li><a href="classes_list.aspx">CLASS</a></li>
+                     <li><a href="home_page.aspx" style="color:#ffd2ac">HOME</a></li>
+                     <li><a href="teacher_list.aspx" style="color:#ffd2ac">TEACHER</a></li>
+                     <li><a href="student_list.aspx" style="color:#ffd2ac">STUDENT</a></li>
+                     <li><a href="classes_list.aspx" style="color:#ffd2ac">CLASS</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,9 +32,10 @@
             
             <nav id="footer_nav">
                 <ul id="footer_menu">
-                     <li><a href="#">HOME</a></li>
-                     <li><a href="#">ABOUT US</a></li>
-                     <li><a href="#">VISIT US</a></li>
+                     <li><a href="home_page.aspx" style="color:#ffd2ac">HOME</a></li>
+                     <li><a href="teacher_list.aspx" style="color:#ffd2ac">TEACHER</a></li>
+                     <li><a href="student_list.aspx" style="color:#ffd2ac">STUDENT</a></li>
+                     <li><a href="classes_list.aspx" style="color:#ffd2ac">CLASS</a></li>
                 </ul>
             </nav>
         </div>
